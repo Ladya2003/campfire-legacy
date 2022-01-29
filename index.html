@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Campfire</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#nav__body").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 1500);
+           });
+       });
+       </script>
+</head>
+<body>
+    <nav id="nav__body">
+        <ul>
+            <li><a href="#about_me">About me</a></li>
+            <li><a href="#my_projects">My Projects</a></li>
+            <li><a href="#contacts_info">Contact info</a></li>
+        </ul>
+    </nav>
+    <div class="full-screen">
+        <div class="full-screen__body">
+            <div class="full-screen__title">Me, Myself & I</div>
+            <div class="full-screen__text">IT Programmer</div>
+        </div>
+        <video preload="auto" muted autoplay loop class="full-srceen__video">
+            <source type="video/mp4" src="videos/fire-place.mp4">
+        </video>
+    </div>
+    <div class="content">
+        <div class="content__container">
+            <h2 id="about_me">About me</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates tempore id, delectus ab commodi omnis quis veniam sint, porro sapiente voluptatem 
+                reiciendis culpa modi atque quo officia ratione distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates tempore id, 
+                delectus ab commodi omnis quis veniam sint, porro sapiente voluptatem reiciendis culpa modi atque quo officia ratione distinctio.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates tempore id, delectus ab commodi omnis quis veniam sint, porro sapiente voluptatem 
+                reiciendis culpa modi atque quo officia ratione distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates tempore id, 
+                delectus ab commodi omnis quis veniam sint, porro sapiente voluptatem reiciendis culpa modi atque quo officia ratione distinctio.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates tempore id, delectus ab commodi omnis quis veniam sint, porro sapiente voluptatem 
+                reiciendis culpa modi atque quo officia ratione distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates tempore id, 
+                delectus ab commodi omnis quis veniam sint, porro sapiente voluptatem reiciendis culpa modi atque quo officia ratione distinctio.
+            </p>
+            <h2 id="my_projects">My Projects & Works</h2>
+            <div class="container__video">
+                <img src="images/project-1.jpg">
+                <img src="images/project-2.jpg">
+                <img src="images/project-3.jpg">
+                <img src="images/project-4.jpg">
+            </div>
+            <h2 id="contacts_info">Contacts Info</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates tempore id, delectus ab commodi omnis quis veniam sint, porro sapiente voluptatem 
+                reiciendis culpa modi atque quo officia ratione distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates tempore id, 
+                delectus ab commodi omnis quis veniam sint, porro sapiente voluptatem reiciendis culpa modi atque quo officia ratione distinctio.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates tempore id, delectus ab commodi omnis quis veniam sint, porro sapiente voluptatem 
+                reiciendis culpa modi atque quo officia ratione distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates tempore id, 
+                delectus ab commodi omnis quis veniam sint, porro sapiente voluptatem reiciendis culpa modi atque quo officia ratione distinctio.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates tempore id, delectus ab commodi omnis quis veniam sint, porro sapiente voluptatem 
+                reiciendis culpa modi atque quo officia ratione distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates tempore id, 
+                delectus ab commodi omnis quis veniam sint, porro sapiente voluptatem reiciendis culpa modi atque quo officia ratione distinctio.
+            </p>
+        </div>  
+    </div>
+</body>
+</html>
