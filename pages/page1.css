@@ -33,17 +33,33 @@ body {
 #nav__body ul li a:active {
   color: rgb(236, 159, 57);
 }
-.content p {
-  padding: 10px 30%;
-  font-size: 22px;
+@media (max-width: 770px) {
+  .content p {
+    padding: 10px 10%;
+    font-size: 22px;
+  }
+  .content h2 {
+    padding: 10px 15%;
+  }
+  .content ol {
+    padding: 10px 10%;
+    font-size: 22px;
+  }
 }
-.content h2 {
-  padding: 10px 35%;
+@media (min-width: 770px) {
+  .content p {
+    padding: 10px 30%;
+    font-size: 22px;
+  }
+  .content h2 {
+    padding: 10px 35%;
+  }
+  .content ol {
+    padding: 10px 30%;
+    font-size: 22px;
+  }
 }
-.content ol {
-  padding: 10px 30%;
-  font-size: 22px;
-}
+
 .content .date {
   font-size: 18px;
   display: flex;
