@@ -2,6 +2,7 @@ body {
   font-size: 20px;
   color: white;
   background: #000;
+  width: 100%;
 }
 .full-screen {
   position: relative;
@@ -13,7 +14,7 @@ body {
   padding: 50px 25px;
   background-color: rgba(0, 0, 0, 0.685);
   position: relative;
-  z-index: 2;
+  z-index: 5;
   display: flex;
   flex: 1 1 auto;
   justify-content: center;
@@ -87,9 +88,13 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+@media (min-width: 480px) {
+  .container__video a img {
+    width: 550px;
+    height: 280px;
+  }
+}
 .container__video a img {
-  width: 550px;
-  height: 280px;
   /* flex: 2 1 auto;
   justify-content: right;
   align-items: center; */
@@ -162,4 +167,10 @@ h2 {
   margin: 0 10% -20px 10%;
   padding: 20px 0 0 0;
   font-size: 23px;
+}
+@media (max-width: 480px) {
+  .container__video a img {
+    width: 250px;
+    height: 120px;
+  }
 }
