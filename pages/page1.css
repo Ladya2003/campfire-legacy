@@ -3,7 +3,7 @@ body {
   color: white;
   background: #000;
 }
-#nav__body ul {
+#nav__body ul:first-child {
   top: 0;
   left: 30%;
   display: flex;
@@ -12,17 +12,19 @@ body {
   justify-content: right;
   align-items: center;
   font-size: 24px;
-  background-color: rgba(218, 152, 108, 0.897);
-  padding: 10px;
+  background-color: rgba(218, 152, 108);
+  padding: 15px;
 }
 #nav__body ul li {
   list-style-type: none;
+  transition: 0.5s;
 }
 #nav__body ul li a {
   list-style-type: none;
   margin: 10px 20px;
   color: white;
   text-decoration: none;
+  transition: 0.2s;
 }
 #nav__body ul li a:visited {
   color: white;
@@ -66,4 +68,29 @@ body {
   color: inherit;
   cursor: pointer;
   text-decoration: none;
+}
+hr {
+  width: 30px;
+  margin: -25px 40% 20px 40%;
+}
+
+.second {
+  display: none;
+  padding: 10px;
+  background-color: rgba(218, 152, 108);
+  margin: 0 0 0 -10px;
+}
+.second li {
+  padding: 10px 0 20px 0;
+}
+li:hover .second {
+  display: block;
+  position: absolute;
+}
+.second li:hover {
+  background-color: rgb(253, 151, 61);
+  margin: 0 -10px;
+}
+ol li {
+  padding: 5px;
 }
