@@ -124,7 +124,7 @@ figcaption {
 @media (max-width: 480px) {
   img {
     width: 250px;
-    height: 180px;
+    height: 150px;
     border: 6px ridge rgba(241, 173, 85, 0.644);
   }
 }
