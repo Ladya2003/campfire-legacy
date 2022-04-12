@@ -4,14 +4,14 @@
 }
 
 body {
-  background-image: url(/images/contacts-bg.jpg);
+  background-image: url(../images/contacts-bg.jpg);
   background-size: 200vh;
   background-repeat: no-repeat;
   background-clip: border-box;
 }
 
 .content__main {
-  background-image: url(/images/campfire-minecraf-purplet.jpg);
+  background-image: url(../images/campfire-minecraf-purplet.jpg);
   background-size: 100%;
   height: 95vh;
   width: 180vh;
