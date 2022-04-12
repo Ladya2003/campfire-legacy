@@ -1,0 +1,162 @@
+@font-face {
+  font-family: Inter;
+  src: url(/font/Inter-Regular.ttf);
+}
+
+body {
+  background-image: url(/images/contacts-bg.jpg);
+  background-size: 200vh;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+}
+
+.content__main {
+  background-image: url(/images/campfire-minecraf-purplet.jpg);
+  background-size: 100%;
+  height: 95vh;
+  width: 180vh;
+  margin: 3vh auto;
+}
+
+form {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FBA8A8), to(#CF9FF4));
+  background: linear-gradient(to bottom, #FBA8A8, #CF9FF4);
+  height: 100%;
+  margin-left: 55%;
+  padding: 0 5%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form input, form textarea {
+  width: 50%;
+}
+
+form h2 {
+  font-family: Inter;
+  font-size: 5vh;
+  font-weight: 100;
+}
+
+form h3 {
+  font-size: 3vh;
+  font-family: Inter;
+  font-weight: 100;
+}
+
+form .header {
+  margin-bottom: 5vh;
+}
+
+form .content__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .content__info .form__group {
+  position: relative;
+  margin: 0 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .content__info .form__group label, form .content__info .form__group input {
+  margin: 3% 0;
+  font-size: 2.5vh;
+}
+
+form .content__info .form__group label {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: Inter;
+  color: #585252;
+}
+
+form .content__info .form__group input {
+  border: none;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 0 0 10px 0;
+  border-bottom: 4px solid #EE3C3C;
+  background-color: transparent;
+}
+
+form .content__info .form__group input:focus {
+  border-bottom: 4px solid #b80a0a;
+}
+
+form .content__info .form__group input:focus ~ label,
+form .content__info .form__group input:not(:placeholder-shown) ~ label {
+  top: -20px;
+  font-size: 1.8vh;
+  color: #817e7e;
+}
+
+form .content__info .textarea__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .content__info .textarea__content label {
+  font-size: 2.5vh;
+  font-family: Inter;
+  margin: 2% 0;
+  color: #585252;
+}
+
+form .content__info .textarea__content textarea {
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+form input[type="submit"] {
+  width: 100%;
+  margin: 10% 0;
+  background-color: #E4276B;
+  color: white;
+  padding: 1.5vh;
+  border-radius: 2vh;
+  font-size: 2vh;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #d6125a;
+  -webkit-box-shadow: 0 4px 16px rgba(255, 0, 0, 0.45);
+          box-shadow: 0 4px 16px rgba(255, 0, 0, 0.45);
+}
+
+form input[type="submit"]:active {
+  background-color: #a1063f;
+}
+/*# sourceMappingURL=contacts.css.map */
