@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Inter;
+    src: url(/font/Inter-Regular.ttf);
+}
+body {
+    background-image: url(/images/contacts-bg.jpg);
+    background-size: 200vh;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+.content__main {
+    background-image: url(/images/campfire-minecraf-purplet.jpg);
+    background-size: 100%;
+    height: 95vh;
+    width: 180vh;
+    margin: 3vh auto;
+}
+form {
+    background: linear-gradient(to bottom, #FBA8A8, #CF9FF4);
+    height: 100%;
+    margin-left: 55%;
+    padding: 0 5%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    input, textarea {
+        width: 50%;
+    }
+    h2 {
+        font-family: Inter;
+        font-size: 5vh;
+        font-weight: 100;
+    }
+    h3 {
+        font-size: 3vh;
+        font-family: Inter;
+        font-weight: 100;
+    }
+    .header {
+        margin-bottom: 5vh;
+    }
+    .content__info {
+        display: flex;
+        flex-direction: column;
+        .form__group {
+            position: relative;
+            margin: 0 0 20px 0;
+            display: flex;
+            flex-direction: column;
+            label, input {
+                margin: 3% 0;
+                font-size: 2.5vh;
+            }
+            label {
+                position: absolute;
+                top: 0;
+                z-index: 0;
+                transition: 0.3s;
+                font-family: Inter;
+                color: rgb(88, 82, 82);
+            }
+            input {
+                border: none;
+                outline: none;
+                transition: 0.3s;
+                padding: 0 0 10px 0;
+                border-bottom: 4px solid #EE3C3C;
+                background-color: transparent;
+                &:focus {
+                    border-bottom: 4px solid #b80a0a;
+                }
+            }
+            input:focus ~ label, 
+            input:not(:placeholder-shown) ~ label { // чтобы текст не заезжал обратно в Input если там есть текст
+                top: -20px;
+                font-size: 1.8vh;
+                color: rgb(129, 126, 126);
+            }
+        }
+        .textarea__content {
+            display: flex;
+            flex-direction: column;
+            label {
+                font-size: 2.5vh;
+                font-family: Inter;
+                margin: 2% 0;
+                color: rgb(88, 82, 82);
+            }
+            textarea {
+                border-radius: 5px;
+                font-size: 18px;
+                background-color: rgba(255, 255, 255, 0.63);
+            }
+        }
+    }
+    input[type="submit"] {
+        width: 100%;
+        margin: 10% 0;
+        background-color: #E4276B;
+        color: white;
+        padding: 1.5vh;
+        border-radius: 2vh;
+        font-size: 2vh;
+        border: none;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+            background-color: #d6125a;;
+            box-shadow: 0 4px 16px rgba(255, 0, 0, 0.45);
+        }
+        &:active {
+            background-color: #a1063f;
+        }
+    }
+}
