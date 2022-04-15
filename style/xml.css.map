@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CAOzB;;AATD,AAGI,OAHG,CAGH,OAAO,CAAC;EACJ,SAAS,EAAE,GAAG;CACjB;;AALL,AAMI,OANG,CAMH,SAAS,CAAC;EACN,SAAS,EAAE,GAAG;CACjB",
+    "sources": [
+        "../sass/xml.scss"
+    ],
+    "names": [],
+    "file": "xml.css"
+}

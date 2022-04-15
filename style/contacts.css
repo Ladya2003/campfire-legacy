@@ -1,6 +1,6 @@
 @font-face {
   font-family: Inter;
-  src: url(/font/Inter-Regular.ttf);
+  src: url(../font/Inter-Regular.ttf);
 }
 
 body {
@@ -16,6 +16,17 @@ body {
   height: 95vh;
   width: 180vh;
   margin: 3vh auto;
+}
+
+.content__main .svg_img {
+  width: 40vh;
+  position: absolute;
+  top: 5vh;
+  left: 10vh;
+}
+
+.content__main a:hover .svg_img {
+  background-color: #a1063f;
 }
 
 form {
