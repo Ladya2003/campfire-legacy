@@ -1,19 +1,28 @@
 @font-face {
     font-family: Inter;
-    src: url(/font/Inter-Regular.ttf);
+    src: url(../font/Inter-Regular.ttf);
 }
 body {
-    background-image: url(/images/contacts-bg.jpg);
+    background-image: url(../images/contacts-bg.jpg);
     background-size: 200vh;
     background-repeat: no-repeat;
     background-clip: border-box;
 }
 .content__main {
-    background-image: url(/images/campfire-minecraf-purplet.jpg);
+    background-image: url(../images/campfire-minecraf-purplet.jpg);
     background-size: 100%;
     height: 95vh;
     width: 180vh;
     margin: 3vh auto;
+    .svg_img {
+        width: 40vh;
+        position: absolute;
+        top: 5vh;
+        left: 10vh;
+    }
+    a:hover .svg_img {
+        background-color: #a1063f;
+    }
 }
 form {
     background: linear-gradient(to bottom, #FBA8A8, #CF9FF4);
