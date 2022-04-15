@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--FileName: 1.xml> -->
+<?xml-stylesheet type="text/css" href="style/xml.css"?>
+<SECTION>
+    <SUBJECT>Мистер гиназии</SUBJECT>
+    <PARAGRAPH>123</PARAGRAPH>
+    <SUBJECT>Ночные прогулки</SUBJECT>
+    <PARAGRAPH>123</PARAGRAPH>
+    <SUBJECT>Баскетбол</SUBJECT>
+    <PARAGRAPH>123</PARAGRAPH>
+    <SUBJECT>Баня с мужиками</SUBJECT>
+    <PARAGRAPH>123</PARAGRAPH>
+</SECTION>
