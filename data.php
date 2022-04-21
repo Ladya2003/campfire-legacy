@@ -14,4 +14,6 @@ if (mail("vladiator_one@mail.ru", "Заявка с сайта", "ФИО:".$fio."
  {     echo "сообщение успешно отправлено";
 } else {
     echo "при отправке сообщения возникли ошибки";
+ ini_set('display_errors','On');
+error_reporting('E_ALL');
 }?>
