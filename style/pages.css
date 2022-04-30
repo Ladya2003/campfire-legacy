@@ -72,6 +72,117 @@ body #nav__body ul li a:active {
   color: #ec9f39;
 }
 
+body p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}
+
+body h1,
+body h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body a:visited,
+body a:link {
+  color: white;
+}
+
+body .clock {
+  font-size: 18px;
+  color: #b9b6b6;
+}
+
+body .content .date {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin: 0 15px 0 0;
+  color: #b8b8b8;
+}
+
+body .pagebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f8c059;
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-variant: small-caps;
+}
+
+body .pagebar .previous {
+  margin: 0 20px 0 0;
+}
+
+body .pagebar a:link,
+body .pagebar a:visited {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body hr {
+  width: 30px;
+  margin: -25px 40% 20px 40%;
+}
+
+body .second {
+  display: none;
+  padding: 10px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f05c2f), to(#ec921d));
+  background: linear-gradient(to top, #f05c2f, #ec921d);
+  margin: 0 0 0 -10px;
+  border-radius: 15px;
+  border-left: 3px solid #f8c15b;
+  border-right: 3px solid #f8c15b;
+  border-bottom: 3px solid #f8c15b;
+}
+
+body .second li {
+  padding: 5px 0 5px 0;
+}
+
+body .second .personal {
+  background-color: red;
+  border-radius: 2vw;
+}
+
+body li:hover .second {
+  display: block;
+  top: 5rem;
+  position: absolute;
+  -webkit-animation: appear 0.4s linear;
+          animation: appear 0.4s linear;
+}
+
+body .second li:hover {
+  background-color: rgba(240, 203, 41, 0.3);
+  border-radius: 20px;
+  margin: 0 -10px;
+}
+
+body strong {
+  display: inline-block;
+  margin: 30px 0px;
+  font-size: 27px;
+}
+
+body figcaption {
+  color: #aa9797;
+}
+
 @media (max-width: 1000px) {
   body #nav__body {
     width: 90%;
@@ -176,112 +287,6 @@ body #nav__body ul li a:active {
     border: 6px ridge rgba(241, 173, 85, 0.644);
     border-radius: 15px;
   }
-}
-
-body p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 400;
-  text-align: justify;
-}
-
-body h1,
-body h2 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-body a:visited,
-body a:link {
-  color: white;
-}
-
-body .clock {
-  font-size: 18px;
-  color: #b9b6b6;
-}
-
-body .content .date {
-  font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  margin: 0 15px 0 0;
-  color: #b8b8b8;
-}
-
-body .pagebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #f8c059;
-  font-size: 25px;
-  letter-spacing: 3px;
-  font-variant: small-caps;
-}
-
-body .pagebar .previous {
-  margin: 0 20px 0 0;
-}
-
-body .pagebar a:link,
-body .pagebar a:visited {
-  color: inherit;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-body hr {
-  width: 30px;
-  margin: -25px 40% 20px 40%;
-}
-
-body .second {
-  display: none;
-  padding: 10px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f05c2f), to(#ec921d));
-  background: linear-gradient(to top, #f05c2f, #ec921d);
-  margin: 0 0 0 -10px;
-  border-radius: 15px;
-  border-left: 3px solid #f8c15b;
-  border-right: 3px solid #f8c15b;
-  border-bottom: 3px solid #f8c15b;
-}
-
-body .second li {
-  padding: 5px 0 5px 0;
-}
-
-body li:hover .second {
-  display: block;
-  top: 5rem;
-  position: absolute;
-  -webkit-animation: appear 0.4s linear;
-          animation: appear 0.4s linear;
-}
-
-body .second li:hover {
-  background-color: rgba(240, 203, 41, 0.3);
-  border-radius: 20px;
-  margin: 0 -10px;
-}
-
-body strong {
-  display: inline-block;
-  margin: 30px 0px;
-  font-size: 27px;
-}
-
-body figcaption {
-  color: #aa9797;
 }
 
 @-webkit-keyframes background {

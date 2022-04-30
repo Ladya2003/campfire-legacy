@@ -1,148 +1,5 @@
-@media (max-width: 560px) {
-  .full-screen__title {
-    text-align: center;
-    font-size: 35px;
-    line-height: 170%;
-  }
-  .full-screen__text {
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: 160%;
-    text-align: center;
-  }
-  .content__container p {
-    font-size: 20px;
-    font-family: Georgia;
-    line-height: 200%;
-    text-indent: 10px;
-    margin: 0 30px;
-  }
-  h2 {
-    font-size: 33px;
-  }
-  .h2_hr {
-    width: 90px;
-    margin: -20px 10% 0 10%;
-    border: 1px solid #e7ddd2;
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  }
-  .vladik {
-    display: none;
-    width: 40%;
-    margin: 0 -10px 20px -50px;
-  }
-  .fire_icon {
-    display: none;
-  }
-  .more__container {
-    width: 65%;
-  }
-  .more {
-    font-size: 25px;
-    text-align: center;
-  }
-  footer {
-    width: 105%;
-  }
-  footer p {
-    font-size: 18px;
-  }
-  .contacts {
-    font-size: 20px;
-  }
-  .container__video a img {
-    width: 330px;
-    height: 180px;
-  }
-}
-
-@media (min-width: 560px) and (max-width: 1300px) {
-  .full-screen__title {
-    text-align: center;
-    font-size: 35px;
-    line-height: 170%;
-  }
-  .full-screen__text {
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: 160%;
-    text-align: center;
-  }
-  .h2_hr {
-    width: 90px;
-    margin: -20px 10% 0 10%;
-    border: 1px solid #e7ddd2;
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.596);
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.596);
-  }
-  .vladik {
-    width: 300px;
-    margin: 0px 0px 20px 80px;
-  }
-  .fire_icon {
-    display: none;
-  }
-  .container__video a img {
-    width: 520px;
-    height: 280px;
-  }
-  .more__container {
-    width: 31%;
-  }
-  footer {
-    width: 102.2%;
-  }
-}
-
-@media (min-width: 1300px) {
-  .full-screen__title {
-    font-size: 55px;
-  }
-  .full-screen__text {
-    font-size: 25px;
-    margin-top: 25px;
-  }
-  .content__container p {
-    font-size: 22px;
-    font-family: Georgia;
-    line-height: 180%;
-    text-indent: 10px;
-  }
-  h2 {
-    font-size: 40px;
-    margin: 50px;
-  }
-  .h2_hr {
-    width: 90px;
-    margin: -50px 10% 0 10%;
-    border: 1px solid #e7ddd2;
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  }
-  .vladik {
-    width: 400px;
-    margin: 0px -50px 20px 80px;
-  }
-  .fire_icon {
-    float: right;
-    width: 220px;
-    margin: 80px -525px 0 0;
-  }
-  .more__container {
-    width: 31%;
-  }
-  .more {
-    font-size: 27px;
-  }
-  .container__video a img {
-    width: 520px;
-    height: 280px;
-  }
-  footer {
-    font-size: 20px;
-    width: 101.25%;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -251,6 +108,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 3vw;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -346,7 +206,9 @@ h2 {
 
 .more__container {
   display: block;
-  background-color: #f7a951;
+  background-color: #fcb93e;
+  -webkit-animation: background-fire 10s ease-in infinite alternate;
+          animation: background-fire 10s ease-in infinite alternate;
   padding: 25px 15px;
   margin: 50px 0;
   border: 7px solid #ee9715;
@@ -455,6 +317,157 @@ footer h2 {
   width: 50px;
 }
 
+@media (max-width: 560px) {
+  .full-screen__title {
+    text-align: center;
+    font-size: 7vw;
+    line-height: 170%;
+  }
+  .full-screen__text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+  }
+  nav li {
+    margin-bottom: 10vw;
+    margin: 0 auto 4vw auto;
+  }
+  .content__container p {
+    font-size: 20px;
+    font-family: Georgia;
+    line-height: 200%;
+    text-indent: 10px;
+    margin: 0 30px;
+  }
+  h2 {
+    font-size: 33px;
+  }
+  .h2_hr {
+    width: 90px;
+    margin: -20px 10% 0 10%;
+    border: 1px solid #e7ddd2;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .vladik {
+    display: none;
+    width: 40%;
+    margin: 0 -10px 20px -50px;
+  }
+  .fire_icon {
+    display: none;
+  }
+  .more__container {
+    width: 65%;
+  }
+  .more {
+    font-size: 25px;
+    text-align: center;
+  }
+  footer {
+    width: 105%;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  .contacts {
+    font-size: 20px;
+  }
+  .container__video a img {
+    width: 80vw;
+    height: 45vw;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 1300px) {
+  .full-screen__title {
+    text-align: center;
+    font-size: 35px;
+    line-height: 170%;
+  }
+  .full-screen__text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+  }
+  .h2_hr {
+    width: 90px;
+    margin: -20px 10% 0 10%;
+    border: 1px solid #e7ddd2;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.596);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.596);
+  }
+  .vladik {
+    width: 300px;
+    margin: 0px 0px 20px 80px;
+  }
+  .fire_icon {
+    display: none;
+  }
+  .container__video a img {
+    width: 520px;
+    height: 280px;
+  }
+  .more__container {
+    width: 31%;
+  }
+  footer {
+    width: 102.2%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .full-screen__title {
+    font-size: 55px;
+  }
+  .full-screen__text {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  .content__container p {
+    font-size: 22px;
+    font-family: Georgia;
+    line-height: 180%;
+    text-indent: 10px;
+  }
+  h2 {
+    font-size: 40px;
+    margin: 50px;
+  }
+  .h2_hr {
+    width: 90px;
+    margin: -50px 10% 0 10%;
+    border: 1px solid #e7ddd2;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  .vladik {
+    width: 400px;
+    margin: 0px -50px 20px 80px;
+  }
+  .fire_icon {
+    float: right;
+    width: 220px;
+    margin: 80px -525px 0 0;
+  }
+  .more__container {
+    width: 31%;
+  }
+  .more {
+    font-size: 27px;
+  }
+  .container__video a img {
+    width: 520px;
+    height: 280px;
+  }
+  footer {
+    font-size: 20px;
+    width: 101.25%;
+  }
+}
+
 @-webkit-keyframes glow {
   from {
     text-shadow: 2px 2px 5px #fcd5a9;
@@ -550,6 +563,18 @@ footer h2 {
   to {
     opacity: 100%;
     text-shadow: 0 0 15px orange;
+  }
+}
+
+@-webkit-keyframes background-fire {
+  50% {
+    background-color: #fd6868;
+  }
+}
+
+@keyframes background-fire {
+  50% {
+    background-color: #fd6868;
   }
 }
 /*# sourceMappingURL=style.css.map */
