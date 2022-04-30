@@ -72,7 +72,7 @@ body #nav__body ul li a:active {
   color: #ec9f39;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 1000px) {
   body #nav__body {
     width: 90%;
   }
@@ -89,7 +89,7 @@ body #nav__body ul li a:active {
     font-weight: 500;
   }
   body .clock {
-    margin-left: 20%;
+    margin-left: 3vw;
   }
   body .content h2 {
     padding: 10px 15%;
@@ -131,7 +131,7 @@ body #nav__body ul li a:active {
   }
 }
 
-@media (min-width: 560px) {
+@media (min-width: 1000px) {
   body .content p {
     padding: 10px 30%;
     font-size: 22px;
@@ -140,7 +140,7 @@ body #nav__body ul li a:active {
     padding: 10px 30%;
   }
   body .clock {
-    margin-left: 50%;
+    margin-left: 5vw;
   }
   body .content h2 {
     padding: 10px 35%;
