@@ -3,17 +3,18 @@
     src: url(../font/Inter-Regular.ttf);
 }
 body {
-    background-image: url(../images/contacts-bg.jpg);
+    background-image: url(../images/contacts-bg-fire.jpg);
     background-size: 100%;    
 }
 .content__main {
-    background-image: url(../images/campfire-minecraf-purplet.jpg);
+    background-image: url(../images/campfire.jpeg);
     background-size: 100%;
+    background-position: -15vw -0; 
     height: 95vh;
     width: 180vh;
     margin: 3vh auto;
     .svg_img {
-        width: 40vh;
+        width: 50vh;
         position: absolute;
         top: 5vh;
         left: 10vh;
@@ -21,7 +22,7 @@ body {
     }
 }
 form {
-    background: linear-gradient(to bottom, #FBA8A8, #CF9FF4);
+    background: linear-gradient(to bottom, #FF8989, #FFCDB1);
     height: 100%;
     margin-left: 55%;
     padding: 0 5%;
@@ -101,9 +102,9 @@ form {
     input[type="submit"] {
         width: 100%;
         margin: 10% 0;
-        background-color: #E4276B;
+        background-color: #F43B2F;
         color: white;
-        padding: 1.5vh;
+        padding: 2vh;
         border-radius: 2vh;
         font-size: 2vh;
         border: none;
