@@ -16,7 +16,7 @@ body #nav__body {
   border-radius: 2rem;
   margin: 0 auto;
 }
-body #nav__body ul:first-child {
+body #nav__body .first {
   top: 0;
   display: flex;
   flex-direction: row;
@@ -35,7 +35,7 @@ body #nav__body ul li {
   display: flex;
   align-items: center;
 }
-body #nav__body ul:first-child li:hover {
+body #nav__body .first li:hover {
   box-shadow: 0 0 15px 5px orange;
   border-radius: 20px;
 }
@@ -116,7 +116,7 @@ body .second .personal {
   border-radius: 2vw;
 }
 body li:hover .second {
-  display: block;
+  display: flex;
   top: 5rem;
   position: absolute;
   -webkit-animation: appear 0.4s linear;
@@ -133,14 +133,43 @@ body strong {
   font-size: 27px;
 }
 body .figure_video_page9 {
-  width: auto;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 body .figure_video_page9 video {
   width: auto;
 }
 body figcaption {
   color: rgb(170, 151, 151);
+}
+body .vids-on-9th-page {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body .page11-audio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body .page11-audio .first-video-page11 {
+  margin-bottom: -4px;
+}
+body .page11-audio audio {
+  margin-top: 2vw;
+}
+body .page11-audio audio::-webkit-media-controls-panel {
+  background-color: #f5e4c4;
+  color: #ffffff;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+body .page11-audio figcaption {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 @media (max-width: 1000px) {
   body #nav__body {
@@ -196,11 +225,19 @@ body figcaption {
   }
   body video {
     margin: 30px 5%;
-    width: 330px;
-    height: 185px;
+    width: 5vw;
+    height: 100vw;
     border: 6px ridge rgba(241, 173, 85, 0.644);
     border-radius: 15px;
   }
+}
+body .temp-content {
+  margin-top: 10vw;
+}
+body .temp-content h3 {
+  font-family: Montserrat;
+  padding: 10px 10%;
+  font-weight: 100;
 }
 @media (min-width: 1000px) {
   body .content p {
@@ -247,6 +284,14 @@ body figcaption {
     height: 340px;
     border: 6px ridge rgba(241, 173, 85, 0.644);
     border-radius: 15px;
+  }
+  body .temp-content {
+    margin-top: 10vw;
+  }
+  body .temp-content h3 {
+    font-family: Montserrat;
+    padding: 10px 30%;
+    font-weight: 100;
   }
 }
 @-webkit-keyframes background {
