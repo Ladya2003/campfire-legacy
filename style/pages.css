@@ -2,6 +2,10 @@
   font-family: Montserrat;
   src: url(../font/Montserrat-Regular.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 95%;
   font-size: 20px;
@@ -58,7 +62,8 @@ body p {
   text-align: justify;
 }
 body h1,
-body h2 {
+body h2,
+body button {
   font-family: Montserrat;
 }
 body a:visited,
@@ -150,6 +155,10 @@ body .vids-on-9th-page {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
+}
+body .with_photo {
+  align-items: center;
 }
 body .page11-audio {
   display: flex;
@@ -170,6 +179,46 @@ body .page11-audio audio::-webkit-media-controls-panel {
 body .page11-audio figcaption {
   margin-top: 2vw;
   margin-bottom: 2vw;
+}
+body .figure_image_page11 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body .figure_image_page11 img {
+  width: 17vw;
+  height: 25vw;
+}
+body .figure_image_page11 .page11_first_img {
+  width: 25vw;
+  height: 12vw;
+}
+body .temp-content {
+  margin-top: 10vw;
+}
+body .temp-content h3 {
+  font-family: Montserrat;
+  padding: 10px 10%;
+  font-weight: 100;
+}
+body .more-button {
+  margin: 10vh 30%;
+  background-color: transparent;
+  border: none;
+  font-size: 2vw;
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+body .hide-vids {
+  display: block;
+  font-family: Montserrat;
+  margin: 5vh 30% 10vh 30%;
+  font-size: 1.5vw;
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
 }
 @media (max-width: 1000px) {
   body #nav__body {
@@ -230,14 +279,30 @@ body .page11-audio figcaption {
     border: 6px ridge rgba(241, 173, 85, 0.644);
     border-radius: 15px;
   }
-}
-body .temp-content {
-  margin-top: 10vw;
-}
-body .temp-content h3 {
-  font-family: Montserrat;
-  padding: 10px 10%;
-  font-weight: 100;
+  body .figure_image_page11 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  body .figure_image_page11 img {
+    width: 60vw;
+    height: 80vw;
+  }
+  body .figure_image_page11 .page11_first_img {
+    width: 60vw;
+    height: 33vw;
+  }
+  body .more-button {
+    margin: 5vh 0 15vw 8vw;
+    font-size: 8vw;
+    text-align: left;
+  }
+  body .hide-vids {
+    margin: 5vh 0 15vw 8vw;
+    font-size: 6vw;
+    text-align: left;
+  }
 }
 @media (min-width: 1000px) {
   body .content p {
@@ -292,6 +357,12 @@ body .temp-content h3 {
     font-family: Montserrat;
     padding: 10px 30%;
     font-weight: 100;
+  }
+  body .figure_image_page11 img, body .figure_image_page11 .page11_first_img {
+    margin: 0;
+  }
+  body .figure_image_page11 figcaption {
+    margin-top: 2vw;
   }
 }
 @-webkit-keyframes background {
