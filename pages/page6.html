@@ -7,6 +7,13 @@
     <title>Page №6</title>
     <link href="../style/pages.css" rel="stylesheet">
     <link type="img/png" sizes="32x32" rel="icon" href="../images/icon.png">
+    <script>
+        let x = prompt("Введите пароль: ");
+        if (x != "aboba" || x == null) {
+            window.close();
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley");
+        }
+    </script>
 </head>
 <body>
     <nav id="nav__body">
@@ -22,7 +29,7 @@
                         <li><a href="page5.html">Page №5</a></li>
                     </div>
                     <div class="part2">
-                        <li><a href="page6.html">Page №6</a></li>
+                        <li><a href="page6.html" target="_blank">Page №6</a></li>
                         <li><a href="page7.html">Page №7</a></li>
                         <li><a href="page8.html">Page №8</a></li>
                         <li><a href="page9.html">Page №9</a></li>
@@ -37,6 +44,10 @@
         </ul>
     </nav>
     <div class="content">
+        <div class="up-down-container">
+            <a href="#nav__body"><img src="../images/up-arrow.png"></a>
+            <a href="#pagebar"><img src="../images/down-arrow.png"></a>
+        </div>
         <h1>Page №6 <span class="clock">&#128345; 4 mins</span></h1>
         <h2>Война двух братьев</h2>
         <hr>
@@ -50,7 +61,7 @@
             вижу новости о том, что в том или ином городе упала ракета, я боюсь, что она упала рядом с родными. Каждый день я молюсь за всех русских и украинцев, которым по какой-то немыслемой причине приказали воевать между собой. Я молюсь, чтобы 
             война закончилась и больше не унесла никаких жизней.
         </p>
-        <div class="pagebar">
+        <div id="pagebar"  class="pagebar">
             <div class="previous">
                 <a href="page5.html">&#11013; previous</a>
             </div>
