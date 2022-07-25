@@ -1,3 +1,5 @@
+// scripts for page11.html
+
 let i = 0;
 
 function ShowOtherVids1() {
@@ -251,4 +253,36 @@ function ShowOtherVids4() {
         hide_cont4.innerHTML = "";
     }
     
+}
+
+// script for contacts.html
+
+function tempError() {
+    let x;
+    x = prompt("1. English\n2. Russian");
+    if (x == 2) {
+        alert(`К сожалению, пока что это поле функционирует неправильно. Для отправки своих данных, пожалуйста, нажмите кнопку 'SUBMIT', 
+после чего откроется приложение для отправки писем, в котором введите нужную информацию (Имя, Фамилию, Почту и Комментарий)`);
+    }
+    if (x == 1) {
+        alert(`Unfortunately, this field is currently not functioning properly. To submit your data, please click on the 'SUBMIT' button,
+after which the application for sending letters will open, in which enter the required information (First Name, Last Name, Mail and Comment`);
+    }
+}
+
+function dataTransfer() {
+    let sbm_btn = document.getElementById("submit-button");
+
+    let name = document.getElementById("first_name");
+    let name_content = name.innerHTML;
+    let sec_name = document.getElementById("last_name");
+    let sec_name_content = name.innerHTML;
+    let email = document.getElementById("email");
+    let email_content = name.innerHTML;
+    let coms = document.getElementById("comments");
+    let coms_content = name.innerHTML;
+    
+    let data_holder = document.getElementById("data-holder");
+
+    data_holder.innerHTML += name_content + sec_name_content + email_content + coms_content;
 }
