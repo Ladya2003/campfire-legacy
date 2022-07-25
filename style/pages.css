@@ -220,6 +220,26 @@ body .hide-vids {
   color: white;
   cursor: pointer;
 }
+body .up-down-container {
+  display: flex;
+  position: fixed;
+  left: 80%;
+  top: 70%;
+  gap: 10px;
+  opacity: 0.5;
+}
+body .up-down-container img {
+  margin: 0;
+  width: 70px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+body .up-down-container img:hover {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.507);
+}
 @media (max-width: 1000px) {
   body #nav__body {
     width: 90%;
@@ -302,6 +322,13 @@ body .hide-vids {
     margin: 5vh 0 15vw 8vw;
     font-size: 6vw;
     text-align: left;
+  }
+  body .up-down-container {
+    left: 76%;
+  }
+  body .up-down-container img {
+    width: 40px;
+    height: 40px;
   }
 }
 @media (min-width: 1000px) {
