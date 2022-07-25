@@ -2,39 +2,30 @@
   font-family: Montserrat;
   src: url(../font/Montserrat-Regular.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   width: 95%;
   font-size: 20px;
   color: white;
-  background: #3b2d2d;
+  background: rgb(59, 45, 45);
 }
-
 body #nav__body {
-  -webkit-box-shadow: 0 -400px 100px -120px #e76712 inset;
-          box-shadow: 0 -400px 100px -120px #e76712 inset;
+  box-shadow: 0 -400px 100px -120px rgb(231, 103, 18) inset;
   -webkit-animation: background 8s infinite alternate;
           animation: background 8s infinite alternate;
   width: 70%;
   border-radius: 2rem;
   margin: 0 auto;
 }
-
-body #nav__body ul:first-child {
+body #nav__body .first {
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
   font-size: 24px;
   /* background: linear-gradient(to right, rgba(218, 152, 108), rgb(199, 101, 35)); */
   padding: 15px;
@@ -42,152 +33,213 @@ body #nav__body ul:first-child {
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.719);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
 body #nav__body ul li {
   list-style-type: none;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
-body #nav__body ul:first-child li:hover {
-  -webkit-box-shadow: 0 0 15px 5px orange;
-          box-shadow: 0 0 15px 5px orange;
+body #nav__body .first li:hover {
+  box-shadow: 0 0 15px 5px orange;
   border-radius: 20px;
 }
-
 body #nav__body ul li a {
   list-style-type: none;
   margin: 10px 20px;
   color: white;
   text-decoration: none;
 }
-
 body #nav__body ul li a:visited {
   color: white;
   text-decoration: none;
 }
-
 body #nav__body ul li a:active {
-  color: #ec9f39;
+  color: rgb(236, 159, 57);
 }
-
 body p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 400;
   text-align: justify;
 }
-
 body h1,
-body h2 {
+body h2,
+body button {
   font-family: Montserrat;
 }
-
 body a:visited,
 body a:link {
   color: white;
 }
-
 body .clock {
   font-size: 18px;
-  color: #b9b6b6;
+  color: rgb(185, 182, 182);
 }
-
 body .content .date {
   font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  justify-content: right;
   margin: 0 15px 0 0;
-  color: #b8b8b8;
+  color: rgb(184, 184, 184);
 }
-
 body .pagebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #f8c059;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(248, 192, 89);
   font-size: 25px;
   letter-spacing: 3px;
   font-variant: small-caps;
 }
-
 body .pagebar .previous {
   margin: 0 20px 0 0;
 }
-
 body .pagebar a:link,
 body .pagebar a:visited {
   color: inherit;
   cursor: pointer;
   text-decoration: none;
 }
-
 body hr {
   width: 30px;
   margin: -25px 40% 20px 40%;
 }
-
 body .second {
   display: none;
   padding: 10px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f05c2f), to(#ec921d));
-  background: linear-gradient(to top, #f05c2f, #ec921d);
+  background: linear-gradient(to top, rgb(240, 92, 47), rgb(236, 146, 29));
   margin: 0 0 0 -10px;
   border-radius: 15px;
-  border-left: 3px solid #f8c15b;
-  border-right: 3px solid #f8c15b;
-  border-bottom: 3px solid #f8c15b;
+  border-left: 3px solid rgb(248, 193, 91);
+  border-right: 3px solid rgb(248, 193, 91);
+  border-bottom: 3px solid rgb(248, 193, 91);
 }
-
 body .second li {
   padding: 5px 0 5px 0;
 }
-
 body .second .personal {
   background-color: red;
   border-radius: 2vw;
 }
-
 body li:hover .second {
-  display: block;
+  display: flex;
   top: 5rem;
   position: absolute;
   -webkit-animation: appear 0.4s linear;
           animation: appear 0.4s linear;
 }
-
 body .second li:hover {
   background-color: rgba(240, 203, 41, 0.3);
   border-radius: 20px;
   margin: 0 -10px;
 }
-
 body strong {
   display: inline-block;
   margin: 30px 0px;
   font-size: 27px;
 }
-
-body figcaption {
-  color: #aa9797;
+body .figure_video_page9 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-
+body .figure_video_page9 video {
+  width: auto;
+}
+body figcaption {
+  color: rgb(170, 151, 151);
+}
+body .vids-on-9th-page {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+body .with_photo {
+  align-items: center;
+}
+body .page11-audio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body .page11-audio .first-video-page11 {
+  margin-bottom: -4px;
+}
+body .page11-audio audio {
+  margin-top: 2vw;
+}
+body .page11-audio audio::-webkit-media-controls-panel {
+  background-color: #f5e4c4;
+  color: #ffffff;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+body .page11-audio figcaption {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+body .figure_image_page11 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body .figure_image_page11 img {
+  width: 17vw;
+  height: 25vw;
+}
+body .figure_image_page11 .page11_first_img {
+  width: 25vw;
+  height: 12vw;
+}
+body .temp-content {
+  margin-top: 10vw;
+}
+body .temp-content h3 {
+  font-family: Montserrat;
+  padding: 10px 10%;
+  font-weight: 100;
+}
+body .more-button {
+  margin: 10vh 30%;
+  background-color: transparent;
+  border: none;
+  font-size: 2vw;
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+body .hide-vids {
+  display: block;
+  font-family: Montserrat;
+  margin: 5vh 30% 10vh 30%;
+  font-size: 1.5vw;
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+body .up-down-container {
+  display: flex;
+  position: fixed;
+  left: 80%;
+  top: 70%;
+  gap: 10px;
+  opacity: 0.5;
+}
+body .up-down-container img {
+  margin: 0;
+  width: 70px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+body .up-down-container img:hover {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.507);
+}
 @media (max-width: 1000px) {
   body #nav__body {
     width: 90%;
@@ -218,7 +270,7 @@ body figcaption {
     margin: 0 10%;
   }
   body .figure_video {
-    margin: -10px -10px 0 -10px;
+    margin: -10px auto 0 auto;
   }
   body img {
     width: 275px;
@@ -227,8 +279,6 @@ body figcaption {
     border-radius: 15px;
   }
   body .figure_video_page8 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-left: 5%;
   }
@@ -244,13 +294,43 @@ body figcaption {
   }
   body video {
     margin: 30px 5%;
-    width: 330px;
-    height: 185px;
+    width: 5vw;
+    height: 100vw;
     border: 6px ridge rgba(241, 173, 85, 0.644);
     border-radius: 15px;
   }
+  body .figure_image_page11 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  body .figure_image_page11 img {
+    width: 60vw;
+    height: 80vw;
+  }
+  body .figure_image_page11 .page11_first_img {
+    width: 60vw;
+    height: 33vw;
+  }
+  body .more-button {
+    margin: 5vh 0 15vw 8vw;
+    font-size: 8vw;
+    text-align: left;
+  }
+  body .hide-vids {
+    margin: 5vh 0 15vw 8vw;
+    font-size: 6vw;
+    text-align: left;
+  }
+  body .up-down-container {
+    left: 76%;
+  }
+  body .up-down-container img {
+    width: 40px;
+    height: 40px;
+  }
 }
-
 @media (min-width: 1000px) {
   body .content p {
     padding: 10px 30%;
@@ -280,8 +360,6 @@ body figcaption {
     border-radius: 15px;
   }
   body .figure_video_page8 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-left: 30%;
   }
@@ -299,24 +377,33 @@ body figcaption {
     border: 6px ridge rgba(241, 173, 85, 0.644);
     border-radius: 15px;
   }
+  body .temp-content {
+    margin-top: 10vw;
+  }
+  body .temp-content h3 {
+    font-family: Montserrat;
+    padding: 10px 30%;
+    font-weight: 100;
+  }
+  body .figure_image_page11 img, body .figure_image_page11 .page11_first_img {
+    margin: 0;
+  }
+  body .figure_image_page11 figcaption {
+    margin-top: 2vw;
+  }
 }
-
 @-webkit-keyframes background {
   50% {
-    background: #ec5a35;
-    -webkit-box-shadow: 0 -200px 100px -200px #daac16 inset;
-            box-shadow: 0 -200px 100px -200px #daac16 inset;
+    background: rgb(236, 90, 53);
+    box-shadow: 0 -200px 100px -200px rgb(218, 172, 22) inset;
   }
 }
-
 @keyframes background {
   50% {
-    background: #ec5a35;
-    -webkit-box-shadow: 0 -200px 100px -200px #daac16 inset;
-            box-shadow: 0 -200px 100px -200px #daac16 inset;
+    background: rgb(236, 90, 53);
+    box-shadow: 0 -200px 100px -200px rgb(218, 172, 22) inset;
   }
 }
-
 @-webkit-keyframes appear {
   from {
     opacity: 0;
@@ -326,7 +413,6 @@ body figcaption {
     opacity: 1;
   }
 }
-
 @keyframes appear {
   from {
     opacity: 0;
@@ -335,5 +421,4 @@ body figcaption {
   to {
     opacity: 1;
   }
-}
-/*# sourceMappingURL=pages.css.map */
+}/*# sourceMappingURL=pages.css.map */
