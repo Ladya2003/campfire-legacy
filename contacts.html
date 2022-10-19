@@ -6,7 +6,7 @@
     <title>Campfire</title>
     <link href="style/contacts.css" rel="stylesheet">
     <link type="img/png" sizes="32x32" rel="icon" href="images/icon.png">
-    <script src="contacts.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="content__main">
@@ -18,23 +18,23 @@
             </div>
             <div class="content__info">
                 <div class="form__group">
-                    <input name="say" id="first_name" type="text" placeholder=" ">
+                    <input name="say" id="first_name" type="text" placeholder=" " onclick="tempError()">
                     <label for="first_name">First Name</label>
                 </div>
                 <div class="form__group">
-                    <input name="to" id="last_name" type="text" placeholder=" ">
+                    <input name="to" id="last_name" type="text" placeholder=" " onclick="tempError()">
                     <label for="last_name">Last Name</label>
                 </div>
                 <div class="form__group">
-                    <input id="email" type="text" placeholder=" ">
+                    <input id="email" type="text" placeholder=" " onclick="tempError()">
                     <label for="email">Email</label>
                 </div>
                 <div class="textarea__content">
-                    <label for="comments">Comments</label>
+                    <label for="comments" onclick="tempError()">Comments</label>
                     <textarea id="comments" rows="3"></textarea>
                 </div>
             </div>
-            <input type="submit" value="SUBMIT">
+            <input id="submit-button" type="submit" value="SUBMIT">
         </form>
     </div>
 </body>
