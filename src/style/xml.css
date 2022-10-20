@@ -1,0 +1,10 @@
+SECTION {
+  display: flex;
+  flex-direction: column;
+}
+SECTION SUBJECT {
+  font-size: 8vh;
+}
+SECTION PARAGRAPH {
+  font-size: 4vh;
+}/*# sourceMappingURL=xml.css.map */

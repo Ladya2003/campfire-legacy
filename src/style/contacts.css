@@ -1,0 +1,134 @@
+@font-face {
+  font-family: Inter;
+  src: url(../font/Inter-Regular.ttf);
+}
+body {
+  background-image: url(../images/contacts-bg-fire.jpg);
+  background-size: 100%;
+}
+
+.content__main {
+  background-image: url(../images/campfire.jpeg);
+  background-size: 100%;
+  background-position: -15vw 0;
+  height: 95vh;
+  width: 180vh;
+  margin: 3vh auto;
+}
+.content__main .svg_img {
+  width: 50vh;
+  position: absolute;
+  top: 5vh;
+  left: 10vh;
+  opacity: 0.8;
+}
+
+form {
+  background: linear-gradient(to bottom, #FF8989, #FFCDB1);
+  height: 100%;
+  margin-left: 55%;
+  padding: 0 5%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  flex-direction: column;
+}
+form input, form textarea {
+  width: 50%;
+}
+form h2 {
+  font-family: Inter;
+  font-size: 5vh;
+  font-weight: 100;
+}
+form h3 {
+  font-size: 3vh;
+  font-family: Inter;
+  font-weight: 100;
+}
+form .header {
+  margin-bottom: 5vh;
+}
+form .content__info {
+  display: flex;
+  flex-direction: column;
+}
+form .content__info .form__group {
+  position: relative;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+form .content__info .form__group label, form .content__info .form__group input {
+  margin: 3% 0;
+  font-size: 2.5vh;
+}
+form .content__info .form__group label {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  transition: 0.3s;
+  font-family: Inter;
+  color: rgb(88, 82, 82);
+}
+form .content__info .form__group input {
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  padding: 0 0 10px 0;
+  border-bottom: 4px solid #EE3C3C;
+  background-color: transparent;
+}
+form .content__info .form__group input:focus {
+  border-bottom: 4px solid #b80a0a;
+}
+form .content__info .form__group input:not(:-moz-placeholder-shown) ~ label {
+  top: -20px;
+  font-size: 1.8vh;
+  color: rgb(129, 126, 126);
+}
+form .content__info .form__group input:not(:-ms-input-placeholder) ~ label {
+  top: -20px;
+  font-size: 1.8vh;
+  color: rgb(129, 126, 126);
+}
+form .content__info .form__group input:focus ~ label,
+form .content__info .form__group input:not(:placeholder-shown) ~ label {
+  top: -20px;
+  font-size: 1.8vh;
+  color: rgb(129, 126, 126);
+}
+form .content__info .textarea__content {
+  display: flex;
+  flex-direction: column;
+}
+form .content__info .textarea__content label {
+  font-size: 2.5vh;
+  font-family: Inter;
+  margin: 2% 0;
+  color: rgb(88, 82, 82);
+}
+form .content__info .textarea__content textarea {
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+form input[type=submit] {
+  width: 100%;
+  margin: 10% 0;
+  background-color: #F43B2F;
+  color: white;
+  padding: 2vh;
+  border-radius: 2vh;
+  font-size: 2vh;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+form input[type=submit]:hover {
+  background-color: #d6125a;
+  box-shadow: 0 4px 16px rgba(255, 0, 0, 0.45);
+}
+form input[type=submit]:active {
+  background-color: #a1063f;
+}/*# sourceMappingURL=contacts.css.map */
