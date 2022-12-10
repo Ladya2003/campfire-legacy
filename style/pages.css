@@ -240,6 +240,19 @@ body .up-down-container img {
 body .up-down-container img:hover {
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.507);
 }
+
+
+
+.img-blog-container {
+  display: flex;
+  justify-content: center;
+}
+.blog-image-diagram {
+  width: 45vw;
+  height: auto;
+}
+
+
 @media (max-width: 1000px) {
   body #nav__body {
     width: 90%;
@@ -390,6 +403,11 @@ body .up-down-container img:hover {
   }
   body .figure_image_page11 figcaption {
     margin-top: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  .blog-image-diagram {
+    width: 80vw !important;
   }
 }
 @-webkit-keyframes background {
