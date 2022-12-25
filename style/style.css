@@ -52,6 +52,8 @@ html body .full-screen .full-srceen__video {
   position: absolute;
   top: 0;
   left: 0;
+  position: fixed;
+  z-index: -1;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -93,7 +95,7 @@ html body #nav__body ul li a:active {
 }
 html body .content {
   background: linear-gradient(to top, rgb(236, 170, 72), rgb(194, 106, 24));
-  padding: 10px 10px 30px 10px;
+  padding: 5vw;
   margin: 0 0 20px -20px;
 }
 html body .content .content__container {
@@ -144,30 +146,33 @@ html body .content .content__container .container__video a img:hover {
   border: 8px solid rgba(255, 0, 0, 0.76);
   padding: 0px;
 }
-html body .content .content__container .blog-pages_header {
+.blog-pages_header {
   text-align: center;
+  margin-bottom: 0;
 }
-html body .content .content__container .blog-pages_hr {
+.blog-pages_hr {
   margin: -3vw auto 3vw auto;
 }
-html body .content .content__container .blog-pages {
+.blog-pages {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-html body .content .content__container .blog-pages p {
+.blog-pages p {
   width: 60vw;
   text-align: center;
   margin: auto;
 }
-html body .content .content__container .blog-pages .more__container {
+.blog-pages .more__container {
   display: flex;
   justify-content: center;
   text-align: center;
   background-color: rgb(252, 185, 62);
   -webkit-animation: background-fire 10s ease-in infinite alternate;
-          animation: background-fire 10s ease-in infinite alternate;
+          animation: 2background-fire 10s ease-in infinite alternate;
   padding: 25px 15px;
+  animation: none;
+  background-color: transparent;
   margin: 50px auto 5vw auto;
   border: 2px solid rgb(238, 151, 21);
   border-radius: 3vw;
@@ -175,16 +180,18 @@ html body .content .content__container .blog-pages .more__container {
   transition: 0.4s;
   text-decoration: none;
 }
-html body .content .content__container .blog-pages .more__container:hover {
+.blog-pages .more__container:hover {
   -webkit-animation: none;
           animation: none;
   background: rgb(233, 131, 35);
+  background-color: transparent !important;
   border: 7px solid rgb(233, 131, 35);
 }
-html body .content .content__container .blog-pages .more__container:active {
+.blog-pages .more__container:active {
   background-color: rgb(197, 77, 8);
+  background-color: transparent !important;
 }
-html body .content .content__container .blog-pages .more__container .more {
+.blog-pages .more__container .more {
   font-weight: 900;
   margin: 10px;
   font-style: italic;
@@ -192,6 +199,19 @@ html body .content .content__container .blog-pages .more__container .more {
           animation: none;
   color: rgb(231, 221, 210);
   text-shadow: 0 0px 10px rgba(0, 0, 0, 0.8);
+}
+.blog-container {
+  padding: 8vw 0;
+  margin: -1.4vw 0;
+  background-color: rgba(0, 0, 0, 0.301);
+}
+.blog-hr-line {
+  border: 2px solid rgb(209, 205, 205);
+  border-left: none;
+  border-right: none;
+  height: 2px;
+  width: 7vw;
+  margin: 1vw auto;
 }
 html body footer {
   background-color: rgb(83, 60, 60);
@@ -362,7 +382,7 @@ html body footer .contacts a:hover:active {
     font-size: 22px;
     font-family: Georgia;
     line-height: 180%;
-    text-indent: 10px;
+    text-indent: 50px;
   }
   h2 {
     font-size: 40px;
@@ -396,6 +416,9 @@ html body footer .contacts a:hover:active {
   footer {
     font-size: 20px;
     width: 101.25%;
+  }
+  .blog-p-container {
+    font-size: 1.5vw !important;
   }
 }
 @-webkit-keyframes glow {
