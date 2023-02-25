@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Inter;
+    src: url(../font/Inter-Regular.ttf);
+  }
+
+  a:link, a:visited {
+    text-decoration: none;
+  }
+
+
+
+
+.maincontent {
+    margin: 4vw auto;
+    width: 70%;
+}
+.allpages-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20vw;
+    justify-content: center;
+    align-items: center;
+}
+.pagerow-container {
+    display: flex;
+    gap: 3vw 2vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.singlepage-container {
+    background-color: #0E0E0E;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;    
+    cursor: pointer;
+    transition: 0.3s;
+    width: 10vw;
+    height: 8vw;
+    box-shadow: 0 4px 14px 4px rgba(0, 0, 0, 0.236);
+}
+.page-number {
+    color: #A1A1A1;
+    font-size: 0.75vw;
+    font-family: Montserrat;
+    position: absolute;
+    top: 0.75vw;
+    right: 1.5vw;
+}
+.page-header {
+    color: #FFFFFF;
+    font-size: 1vw;
+    font-family: Inter;
+    width: 70%;
+    margin: 2.5vw 0;
+    text-align: center;
+}
+.lock_icon {
+    position: absolute;
+     top: 0.75vw;
+    left: 1.5vw;
+    width: 0.8vw;
+    height: auto;
+    border: none;
+    margin: 0;
+}
+
+
+.singlepage-container:hover {
+    background-color: #000000;
+}
+
+
+
+@media (max-width: 800px) {
+    .maincontent {
+        width: 90%;
+    }
+    .singlepage-container {
+        border-radius: 4vw;
+        width: 25vw;
+        height: 25vw;
+    }
+    .page-header {
+        font-size: 3vw !important;
+        margin: 8vw 0;
+    }
+    .page-number {
+        font-size: 2.5vw;
+        top: 2vw;
+        right: 4vw;
+    }
+    .lock_icon {
+        top: 2vw;
+        width: 3vw;
+    }
+}
