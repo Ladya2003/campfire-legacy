@@ -269,6 +269,7 @@ body .up-down-container img:hover {
   body h1 {
     padding: 10px 10%;
     font-weight: 500;
+    font-size: 5vw !important;
   }
   body .clock {
     margin-left: 3vw;
