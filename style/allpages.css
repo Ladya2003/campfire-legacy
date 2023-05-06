@@ -46,6 +46,10 @@
     height: 8vw;
     box-shadow: 0 4px 14px 4px rgba(0, 0, 0, 0.236);
 }
+.singlepage-container:hover {
+    background-color: #242323;
+    transition: 0.3s;
+}
 .page-number {
     color: #A1A1A1;
     font-size: 0.75vw;
@@ -70,11 +74,6 @@
     height: auto;
     border: none;
     margin: 0;
-}
-
-
-.singlepage-container:hover {
-    background-color: #000000;
 }
 
 
